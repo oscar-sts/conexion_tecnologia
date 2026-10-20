@@ -1,0 +1,232 @@
+.lineConsole {
+  list-style-type: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin-bottom: 0px;
+  color: rgba(44, 51, 56, 0.5);
+}
+
+.lineConsole:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.console {
+  width: 95%;
+  height: 500px;
+  overflow: auto;
+  background-color: #dfdfde;
+  border: 1px solid black;
+  padding: 0 20px 0 20px;
+}
+
+.erroLine {
+  background-color: rgba(225, 29, 72, 0.5);
+  color: black;
+}
+
+.infoLine {
+  background-color: rgba(56, 134, 179, 0.5);
+  color: black;
+}
+
+.warningLine {
+  background-color: rgba(185, 201, 40, 0.692);
+  color: black;
+}
+
+.deleteLine {
+  background-color: rgba(132, 151, 211, 0.692);
+  color: black;
+}
+
+tr:hover > td .oculto {
+  visibility: visible;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+/* From uiverse.io by @barisdogansutcu */
+svg {
+  width: 2em;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+  display: none;
+}
+
+circle {
+  fill: none;
+  stroke: hsl(0, 0%, 0%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dashoffset: -125px;
+  }
+}
+
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 8px !important;
+}
+
+.loader_console {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* From uiverse.io by @abrahamcalsin */
+.loaderRectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3px;
+  height: 100px;
+}
+
+.loaderRectangle div {
+  width: 20px;
+  height: 32px;
+  animation: 0.9s ease-in-out infinite;
+  background: #183153;
+  box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+}
+
+.loaderRectangle div:nth-child(1) {
+  animation-name: rectangleOneAnim;
+  animation-delay: 0s;
+}
+
+@keyframes rectangleOneAnim {
+  0% {
+    height: 30px;
+  }
+
+  40% {
+    height: 60px;
+  }
+
+  100% {
+    height: 30px;
+  }
+}
+
+.loaderRectangle div:nth-child(2) {
+  animation-name: rectangleTwoAnim;
+  animation-delay: 0.1s;
+}
+
+@keyframes rectangleTwoAnim {
+  0% {
+    height: 30px;
+  }
+
+  40% {
+    height: 80px;
+  }
+
+  100% {
+    height: 30px;
+  }
+}
+
+.loaderRectangle div:nth-child(3) {
+  animation-name: rectangleThreeAnim;
+  animation-delay: 0.2s;
+}
+
+@keyframes rectangleThreeAnim {
+  0% {
+    height: 30px;
+  }
+
+  40% {
+    height: 100px;
+  }
+
+  100% {
+    height: 30px;
+  }
+}
+
+.loaderRectangle div:nth-child(4) {
+  animation-name: rectangleFourAnim;
+  animation-delay: 0.3s;
+}
+
+@keyframes rectangleFourAnim {
+  0% {
+    height: 30px;
+  }
+
+  40% {
+    height: 80px;
+  }
+
+  100% {
+    height: 30px;
+  }
+}
+
+.loaderRectangle div:nth-child(5) {
+  animation-name: rectangleFiveAnim;
+  animation-delay: 0.4s;
+}
+
+@keyframes rectangleFiveAnim {
+  0% {
+    height: 30px;
+  }
+
+  40% {
+    height: 60px;
+  }
+
+  100% {
+    height: 30px;
+  }
+}
+
+
+.bodega{
+  border: 1px solid black; 
+  width: 150px; 
+  display: flex; 
+  flex-flow: column; 
+  gap: 10px; 
+  padding: 10px
+}
